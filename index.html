@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+  <body>
+      <section id="home">
+        <header>
+          Conversión de Unidades
+        </header>
+        <nav>
+          <div class="topdiv">
+            <a href="#temperature"><button  class="topmenu">Temperatura</button></a>
+            <a href="#weight"><button  class="topmenu">Peso</button></a>
+            <a href="#distance"><button  class="topmenu">Distancia</button></a>
+          </div>
+        </nav>
+      </section>    
+      <div style="clear:both;"></div>
+     
+      <div id="all-conversion-sections">
+
+        <section id="temperature"  class="b temperature">
+          <div id="tmp">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
+              <figcaption>Conversión de Celsius a Fahrenheit</figcaption>
+            </figure>
+            <article>
+
+              <fieldset>
+                <legend>Temperatura</legend>
+                <label for="Temperature">Celsius</label> <br/>
+
+ <input type="number" id="celsius"> <br/>
+
+                <button id="temperature" onclick="temperature()"> Convertir </button> <br/>
+
+                <input type="number" id="fahrenheit"> <br/>
+
+ <label for="Temperature">Fahrenheit</label>
+              </fieldset>
+              <aside>
+                Para convertir grados Celsius a Fahrenheit usted mismo, use esta fórmula reemplazando "C" con su temperatura en grados Celsius: (C × 9/5) + 32
+              </aside>
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+      
+        <section id="weight"  class="b weight">          
+          <div id="wgt">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
+              <figcaption>Conversión de Kilogramos a Libras</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <legend>Peso</legend>
+                <label for="Weight">KG</label> <br/>
+
+ <input type="number" id="kilo"> <br/>
+
+                <button id="weight" onclick="weight()"> Convertir </button>  <br/>
+
+ 
+                <input type="number" id="pounds">  <br/>
+
+  <label for="Weight">Libras</label>    
+              </fieldset>
+              <aside>
+                Para convertir kilogramos a libras usted mismo, use esta fórmula reemplazando "kg" con su peso en kilogramos: kg x 2,205
+              </aside>      
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+
+        <section id="distance"  class="b distance">
+          <div id="dst">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
+              <figcaption>Conversión de Kilometros a Millas</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <legend>Distancia</legend>
+                  <label for="Distance">KM</label> <br/>
+
+ <input type="number" id="km">  <br/>
+
+                  <button id="distance" onclick="distance()"> Convertir </button> <br/>
+
+                  <input type="number" id="miles">  <br/>
+
+  <label for="Distance">Millas</label>
+              </fieldset>
+              <aside>
+                Para convertir kilómetros a millas usted mismo, utilice esta fórmula reemplazando "km" con su distancia en kilómetros: km &divide; 1.609
+              </aside>
+    
+            </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+
+      </div>
+
+    <div id="go-home" class="iconbutton">
+      <a href="#home">
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+      </a>
+    </div>
+  </body>
+</html>
